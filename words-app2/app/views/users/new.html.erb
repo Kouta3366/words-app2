@@ -4,21 +4,21 @@
       <%= message %>
     </div>
   <% end %>
-  <%= form_tag("/users/create") do %>
-    <div class="pass1">ニックネーム</div>
-    <div class="pass2">
-      <input name="name" class="pass3" value="<%=  %>">
-    </div>
-    <div class="pass1">ID</div>
-    <div class="pass2">
-      <input name="login_id" class="pass3" value="<%= %>">
-    </div>
-    <div class="pass1">パスワード</div>
-    <div class="pass2">
-      <input type="password" name="password" class="pass3" value="<%=  %>">
-    </div>
-    <div class="login">
-      <input type="submit" class="login2" value="登録">
-    </div>
-  <% end %>
+  <div class="col-md-3">
+  </div>
+  <div class="text-center col-md-6">
+    <%= form_tag("/users/create") do %>
+      <br><br>
+      <input name="name" class="form-control" placeholder="ニックネーム" value="<%=  %>" required autofocus>
+      <br>
+      <input name="login_id" class="form-control" placeholder="ID" value="<%=  %>" required>
+      <br>
+      <input name="password" type="password" class="form-control" placeholder="Password" value="<%=  %>" required>
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">登録</button>
+      <br><br>
+      <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+    <% end %>
+  </div>
+
 </div>
