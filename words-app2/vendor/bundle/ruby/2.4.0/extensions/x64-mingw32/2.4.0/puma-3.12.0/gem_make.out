@@ -1,0 +1,21 @@
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181230-5336-jnkr5d.rb extconf.rb
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+creating Makefile
+
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR="
+generating puma_http11-x64-mingw32.def
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20181230-5336-1vs75kv/puma

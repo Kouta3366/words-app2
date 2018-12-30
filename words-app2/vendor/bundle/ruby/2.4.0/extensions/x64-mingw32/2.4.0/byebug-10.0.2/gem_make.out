@@ -1,0 +1,20 @@
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+D:/Ruby24-x64/bin/ruby.exe -r ./siteconf20181230-5336-uneyxz.rb extconf.rb
+creating Makefile
+
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+generating byebug-x64-mingw32.def
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: D:/r6/words-app2/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20181230-5336-1cq6c56/byebug
