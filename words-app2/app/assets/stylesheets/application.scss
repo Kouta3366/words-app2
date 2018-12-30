@@ -15,3 +15,507 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ *{
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+header {
+
+  width: 100%;
+  background-color: rgba(34, 139, 34, 0.5);
+  position :fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+  margin-top: -65px;
+  margin-left: 30px;
+}
+
+.header-left a {
+  line-height: 65px;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+
+.h-container {
+  margin: 70px auto 0;
+  max-width: 1500px;
+
+}
+
+.container0 {
+  margin: 100px auto 0;
+  max-width: 1500px;
+}
+
+.pass1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.pass2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pass3 {
+  height: 30px;
+  width: 250px;
+  font-size: 15px;
+}
+
+.login {
+  text-align: center;
+  margin: 30px;
+}
+
+.login2 {
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.form {
+  text-align: center;
+}
+
+.form textarea {
+  font-size: 20px;
+  height: 150px;
+  width: 400px;
+}
+
+.form-error {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* /home/top ================================ */
+.item {
+  width: 25%;
+  float: left;
+  padding: 20px 30px 20px 30px;
+  position: relative;
+}
+
+.item2 {
+  width: 25%;
+  float: left;
+  padding: 20px 30px 130px 30px;
+  position: relative;
+}
+
+.item-box {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0px 30px #c1ced7;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.list-new {
+  height: 50px;
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 0px 30px #c1ced7;
+  font-size: 22px;
+  font-weight: 800;
+  position: absolute;
+  right: 30px;
+}
+
+.list-name {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: -10px;
+}
+
+ /* /home/about ================================ */
+ .about {
+   width: 40%;
+   margin: auto;
+   padding: 20px 30px 20px 30px;
+ }
+
+ .about-box {
+   width: 100%;
+   font-weight: 800;
+   font-size: 25px;
+ }
+
+ /* /lists/start ================================ */
+.start-button {
+ height: 50px;
+ width: 100%;
+ background-color: white;
+ box-shadow: 0 0px 30px #c1ced7;
+ font-size: 15px;
+ font-weight: 800;
+}
+
+.start-item {
+ width: 25%;
+ float: left;
+ padding: 20px 30px 20px 30px;
+ position: relative;
+}
+
+.start-button2 {
+ height: 50px;
+ width: 50%;
+ background-color: white;
+ box-shadow: 0 0px 30px #c1ced7;
+ font-size: 15px;
+ font-weight: 800;
+ float: right;
+}
+
+.start-item2 {
+ width: 25%;
+ float: right;
+ padding: 20px 30px 20px 30px;
+ margin-bottom: 80px;
+}
+
+/* /lists/show ================================ */
+.item3 {
+ width: 25%;
+ float: left;
+ padding: 20px 30px 20px 30px;
+ position: relative;
+ text-align: center;
+ margin-top: 20px;
+}
+
+.item3-left {
+ margin-left: -140px;
+ margin-bottom: -40px;
+
+}
+
+.item3-right {
+ margin-right: -150px;
+ margin-top: -40px;
+}
+
+.item3-destroy {
+ height: 40px;
+ width: 130px;
+ font-size: 12px;
+ font-weight: 800;
+}
+
+.item3-new {
+ height: 40px;
+ width: 80px;
+ font-size: 12px;
+ font-weight: 800;
+}
+
+/* /lists/edit2 ================================ */
+.edit-button {
+ margin: 30px;
+ text-align: center;
+ margin-left: 200px;
+}
+
+.edit-button2 {
+ margin-top: -62px;
+ text-align: center;
+ margin-right: 200px;
+}
+
+.edit-button-left {
+ height: 30px;
+ width: 130px;
+ font-size: 20px;
+ font-weight: 800;
+}
+
+.edit-button-right {
+ height: 30px;
+ width: 130px;
+ font-size: 20px;
+ font-weight: 800;
+}
+
+/* /lists/:id/card#/:id2 ================================ */
+.card {
+  width: 40%;
+  margin: auto;
+}
+
+.card-box {
+  height: 160px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0px 30px #c1ced7;
+  font-weight: 800;
+  position: relative;
+}
+
+.card-box-left {
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  width: 35%;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-box-right {
+  position: absolute;
+  top: 30px;
+  left: 45%;
+  height: 100px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-box-left-name {
+  font-weight: 1000;
+  word-break: break-all;
+  font-size: 18px;
+  color: red;
+  z-index: 8;
+}
+
+.card-box-right-name {
+  word-break: break-all;
+  font-weight: 600;
+  font-size: 17px;
+  z-index: 8;
+}
+
+.hidden0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 160px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 9;
+}
+
+.hidden-in0 {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 1000;
+  color: black;
+  background-color: #98fb98;
+  text-align: center;
+}
+
+.hidden2 {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 60%;
+  height: 160px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 9;
+}
+
+.hidden-in2 {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 1000;
+  color: black;
+  background-color: #98fb98;
+}
+
+.card-next {
+  width: 25%;
+  padding: 20px 0 20px;
+  position: fixed;
+  left: 50%;
+}
+
+.card-next-box {
+  height: 50px;
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 0px 30px #c1ced7;
+  font-size: 30px;
+  font-weight: 800;
+  right: 30px;
+}
+
+/* /lists/end ================================ */
+.card-box2 {
+  height: 100px;
+  width: 100%;
+  font-weight: 800;
+}
+
+.card-box-end {
+  text-align: center;
+  font-size: 25px;
+  line-height: 100px;
+}
+
+/* フラッシュ ================================ */
+.flash {
+ padding: 2px 0;
+ color: white;
+ background: rgb(251, 170, 88);
+ text-align: center;
+ position: absolute;
+ top: 50px;
+ z-index: 9;
+ width: 100%;
+ border-radius: 0 0 2px 2px;
+ font-size: 20px;
+}
+
+@media (min-width: 1001px) {
+
+
+  .header-right {
+    float: right;
+    margin-top: -50px;
+    margin-right: 50px;
+  }
+
+  .header-right li {
+    list-style: none;
+
+    padding: 0 10px;
+    float: left;
+    transition: all 0.5s;
+    font-weight: 800;
+  }
+
+  .header-right li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  #menu {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .header-right {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header-right li {
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .header-right li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .item {
+    width: 50%;
+  }
+
+  .item2 {
+    width: 50%;
+  }
+
+  .item3 {
+    width: 50%;
+  }
+
+  .start-item {
+    width: 50%;
+  }
+
+  .start-item2 {
+    width: 50%;
+  }
+
+  .card {
+    width: 60%;
+  }
+
+  .card-next {
+    width: 40%;
+  }
+
+  .about {
+    width: 60%;
+  }
+}
+
+/* スマートフォン向けレイアウト */
+@media (max-width: 670px) {
+
+  .item {
+    width: 100%;
+  }
+
+  .item2 {
+    width: 100%;
+  }
+
+  .item3 {
+    width: 100%;
+  }
+
+  .start-item {
+    width: 100%;
+  }
+
+  .start-item2 {
+    width: 100%;
+  }
+
+  .form textarea {
+    height: 120px;
+    width: 260px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-next {
+    width: 60%;
+  }
+
+  .about {
+    width: 100%;
+  }
+}
