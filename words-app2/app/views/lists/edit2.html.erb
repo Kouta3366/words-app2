@@ -1,0 +1,28 @@
+<div class="container0">
+  <% @card.errors.full_messages.each do |message| %>
+    <div class="form-error">
+      <%= message %>
+    </div>
+  <% end %>
+  <div class="list-name"><%= @list.list_name %></div>
+  <br>
+  <%= form_tag("/card/#{@card.id}/update") do%>
+    <div class="pass1">単語名</div>
+    <div class="pass2">
+      <input name="word" class="pass3" value="<%= @card.word  %>">
+    </div>
+    <div class="pass1">意味</div>
+    <div class="form">
+      <textarea name="meaning"><%= @card.meaning %></textarea>
+    </div>
+    <div class="edit-button">
+
+      <input class="edit-button-right" type="submit" value="変更">
+    </div>
+  <% end %>
+  <%= form_tag("/card/#{@card.id}/destroy") do%>
+    <div class="edit-button2">
+      <input class="edit-button-left" type="submit" value="削除">
+    </div>
+  <% end %>
+</div>

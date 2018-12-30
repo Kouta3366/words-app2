@@ -1,0 +1,22 @@
+<div class="container0">
+  <% @card.errors.full_messages.each do |message| %>
+    <div class="form-error">
+      <%= message %>
+    </div>
+  <% end %>
+  <div class="list-name"><%= @list.list_name %></div>
+  <br>
+  <%= form_tag("/card/#{@list.id}/create") do%>
+    <div class="pass1">単語名</div>
+    <div class="pass2">
+      <input name="word" class="pass3" value="<%= @word %>">
+    </div>
+    <div class="pass1">意味</div>
+    <div class="form">
+      <textarea name="meaning"><%= @meaning %></textarea>
+    </div>
+    <div class="login">
+      <input class="login2" type="submit" value="保存">
+    </div>
+  <% end %>
+</div>

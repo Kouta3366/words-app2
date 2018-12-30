@@ -1,0 +1,12 @@
+<div class="container0">
+  <% @lists.each do |list| %>
+    <div class="item">
+      <%= form_tag("/lists/#{list.id}/start") do %>
+          <input class="item-box" type="submit" value="<%= list.list_name %>">
+      <% end %>
+    </div>
+  <% end %>
+    <div class="item2">
+      <a href="/lists/new"><input class="list-new" type="submit" value="リスト作成"></a>
+    </div>
+</div>

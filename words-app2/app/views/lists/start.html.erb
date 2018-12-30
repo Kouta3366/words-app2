@@ -1,0 +1,18 @@
+<div class="container0">
+    <div class="list-name"><%= @list.list_name %></div>
+    <div class="start-item">
+      <a href="<%=" /lists/#{@list.id}/card1/0 "%>"><input class="start-button" type="submit" value="登録した順で単語を隠す"></a>
+    </div>
+    <div class="start-item">
+      <a href="<%=" /lists/#{@list.id}/card2/0 "%>"><input class="start-button" type="submit" value="登録した順で意味を隠す"></a>
+    </div>
+    <div class="start-item">
+      <a href="<%=" /lists/#{@list.id}/card3/0 "%>"><input class="start-button" type="submit" value="ランダムで単語を隠す"></a>
+    </div>
+    <div class="start-item">
+      <a href="<%=" /lists/#{@list.id}/card4/0 "%>"><input class="start-button" type="submit" value="ランダムで意味を隠す"></a>
+    </div>
+    <div class="start-item2">
+      <a href="<%= "/lists/#{@list.id}/show "%>"><input class="start-button2" type="submit" value="編集"></a>
+    </div>
+</div>

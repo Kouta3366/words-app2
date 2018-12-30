@@ -1,0 +1,30 @@
+<div class="container0">
+  <div class="card">
+    <div class="card-box">
+      <div class = hidden0>
+        <input id="visi" class="hidden-in0" type="button" value="単語を見る" onclick="hyoji2(1)">
+      </div>
+      <div class="card-box-left">
+        <div class="card-box-left-name">
+          <%= @card.word %>
+        </div>
+      </div>
+      <div class="card-box-right">
+        <div class="card-box-right-name"><%= @card.meaning %></div>
+      </div>
+    </div>
+  </div>
+  <div class="card-next">
+    <a href="<%=" /lists/#{@card.list_id}/card1/#{@no + 1} "%>"><input class="card-next-box" type="submit" value="次へ"></a>
+  </div>
+
+  <script>
+    function hyoji2(num)
+    {
+      if (num == 1)
+      {
+        document.getElementById("visi").style.visibility="hidden";
+      }
+    }
+  </script>
+</div>

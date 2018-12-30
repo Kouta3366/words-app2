@@ -1,0 +1,16 @@
+<div class="container0">
+  <% @list.errors.full_messages.each do |message| %>
+    <div class="form-error">
+      <%= message %>
+    </div>
+  <% end %>
+  <%= form_tag("/lists/create") do %>
+    <div class="pass1">単語リスト名</div>
+    <div class="pass2">
+      <input name="list_name" class="pass3" value="<%=  %>">
+    </div>
+    <div class="login">
+      <input type="submit" class="login2" value="次へ">
+    </div>
+  <% end %>
+</div>

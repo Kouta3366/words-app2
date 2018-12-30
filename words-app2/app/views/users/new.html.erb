@@ -1,0 +1,24 @@
+<div class="container0">
+  <% @user.errors.full_messages.each do |message| %>
+    <div class="form-error">
+      <%= message %>
+    </div>
+  <% end %>
+  <%= form_tag("/users/create") do %>
+    <div class="pass1">ニックネーム</div>
+    <div class="pass2">
+      <input name="name" class="pass3" value="<%=  %>">
+    </div>
+    <div class="pass1">ID</div>
+    <div class="pass2">
+      <input name="login_id" class="pass3" value="<%= %>">
+    </div>
+    <div class="pass1">パスワード</div>
+    <div class="pass2">
+      <input type="password" name="password" class="pass3" value="<%=  %>">
+    </div>
+    <div class="login">
+      <input type="submit" class="login2" value="登録">
+    </div>
+  <% end %>
+</div>

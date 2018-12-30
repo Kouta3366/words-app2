@@ -1,2 +1,19 @@
-<h1>Lists#show</h1>
-<p>Find me in app/views/lists/show.html.erb</p>
+<div class="container0">
+    <br>
+    <div class="list-name"><%= @list.list_name %></div>
+    <% @cards.each do |card| %>
+      <div class="item">
+        <a href="<%=" /lists/#{card.id}/edit2 "%>"><input class="item-box" type="submit" value="<%= card.word %>"></a>
+      </div>
+    <% end %>
+    <div class="item3">
+      <%= form_tag("/lists/#{@list.id}/destroy") do%>
+        <div class="item3-left">
+          <input class="item3-destroy" type="submit" value="このリストを削除">
+        </div>
+      <% end %>
+      <div class="item3-right">
+        <a href="<%=" /lists/#{@list.id}/edit "%>"><input class="item3-new" type="submit" value="作成"></a>
+      </div>
+    </div>
+</div>
