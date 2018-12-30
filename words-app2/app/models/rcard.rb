@@ -1,0 +1,2 @@
+class Rcard < ApplicationRecord
+end
