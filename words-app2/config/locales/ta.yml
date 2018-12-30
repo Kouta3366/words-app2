@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      list: リスト
+    attributes:
+      list:
+        list_name: 単語リスト名

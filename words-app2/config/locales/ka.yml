@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    models:
+      card: カード
+    attributes:
+      card:
+        word: 単語名
+        meaning: 意味
